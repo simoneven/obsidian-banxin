@@ -1,0 +1,6 @@
+node_modules/
+scripts/harness/harness.js
+*.zip
+
+# 构建产物：由 npm run build 生成，只随 GitHub Release 分发，不进仓库
+main.js
