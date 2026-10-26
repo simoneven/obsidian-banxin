@@ -1,6 +1,6 @@
-# 版心 · 中文排版
+# Banxin Typography
 
-**Banxin – Chinese Typography for Obsidian** · 作者 Simon 老陈
+**版心 · 中文排版** · 作者 Simon 老陈
 
 > 版心：排版术语，指一页纸上排放正文的区域。
 
