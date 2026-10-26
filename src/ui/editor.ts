@@ -594,7 +594,7 @@ export class StyleEditor {
 		const own = grid.createEl("button", { cls: "doc-style-template-card is-plain", attr: { type: "button" } });
 		own.createDiv({ cls: "doc-style-template-name", text: "保持主题，自己调" });
 		own.createDiv({ cls: "doc-style-template-desc", text: "从「全局」开始，先选中文字体，再逐项调整。" });
-		w.createDiv({ cls: "doc-style-welcome-author", text: `版心 · 作者 ${AUTHOR.name}　公众号 / 小红书「${AUTHOR.wechat}」` });
+		w.createDiv({ cls: "doc-style-welcome-author", text: `版心 · 作者 ${AUTHOR.name} 公众号 / 小红书「${AUTHOR.wechat}」` });
 		own.addEventListener("click", () => {
 			this.host.store.update("完成引导", (d) => (d.onboarded = true), { undoable: false, styleChanged: false });
 			this.select("global");

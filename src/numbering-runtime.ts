@@ -31,7 +31,7 @@ function numbersCached(path: string, text: string, set: StyleSet): Map<number, s
 export function setNumberSpan(h: HTMLElement, text: string | undefined) {
 	h.querySelectorAll(`:scope > .${NUM_CLASS}`).forEach((s) => s.remove());
 	if (!text) return;
-	const span = document.createElement("span");
+	const span = createEl("span");
 	span.className = NUM_CLASS;
 	span.textContent = text;
 	span.setAttribute("aria-hidden", "true");
@@ -81,7 +81,7 @@ class NumWidget extends WidgetType {
 		return other.text === this.text;
 	}
 	toDOM() {
-		const span = document.createElement("span");
+		const span = createEl("span");
 		span.className = `${NUM_CLASS} cm-${NUM_CLASS}`;
 		span.textContent = this.text;
 		span.setAttribute("aria-hidden", "true");

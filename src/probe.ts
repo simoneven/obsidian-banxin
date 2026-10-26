@@ -4,7 +4,9 @@
    测量时临时停用插件自己的样式，保证读到的是主题值。
    ========================================================================== */
 
-import { ElementKey, looksCJKFont, displayFontName, STYLE_EL_ID } from "./constants";
+import { Platform } from "obsidian";
+import { ElementKey, looksCJKFont, displayFontName } from "./constants";
+import { detachSheet } from "./css/sheet";
 import { StyleProps } from "./schema";
 import { emFromPx, lineHeightFromPx, pxToPt, rgbToHex, spacingLinesFromPx, weightFromComputed } from "./units";
 
@@ -27,7 +29,7 @@ export function parseFamilies(v: string): string[] {
 }
 
 function isMac(): boolean {
-	return /Mac/i.test(navigator.platform || navigator.userAgent);
+	return Platform.isMacOS;
 }
 
 export function defaultCJKFont(): string {
@@ -95,9 +97,7 @@ export function invalidateProbe() {
 
 export function probeTheme(): ThemeValues {
 	if (cached) return cached;
-	const ours = document.getElementById(STYLE_EL_ID) as HTMLStyleElement | null;
-	const prevMedia = ours?.media ?? "";
-	if (ours) ours.media = "not all";
+	const restoreSheet = detachSheet();
 	const host = document.body.createDiv();
 	host.addClass("doc-style-probe");
 	host.setAttr("aria-hidden", "true");
@@ -130,7 +130,7 @@ export function probeTheme(): ThemeValues {
 		return cached;
 	} finally {
 		host.remove();
-		if (ours) ours.media = prevMedia;
+		restoreSheet();
 	}
 }
 

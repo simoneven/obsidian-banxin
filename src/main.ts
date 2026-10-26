@@ -6,8 +6,9 @@ import {
 	App, Component, ItemView, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting, TFile, WorkspaceLeaf,
 	FuzzySuggestModal,
 } from "obsidian";
-import { AUTHOR, ElementKey, elementName, STYLE_EL_ID, VIEW_TYPE } from "./constants";
+import { AUTHOR, ElementKey, elementName, VIEW_TYPE } from "./constants";
 import { anyIndent, generateCss } from "./css/generator";
+import { disposeSheet, setSheetCss } from "./css/sheet";
 import { facesFor, loadFonts, resetInstalledCache } from "./fonts";
 import { applyIndent, applyIndentEverywhere, removeIndentSpans } from "./indent";
 import { numberingEditorExtension, numberingPostProcessor } from "./numbering-runtime";
@@ -26,7 +27,6 @@ const SAVE_DELAY = 400;
 
 export default class DocStylePlugin extends Plugin implements EditorHost {
 	store!: Store;
-	private styleEl: HTMLStyleElement | null = null;
 	private currentCss = "";
 	private editors = new Set<StyleEditor>();
 	private saveTimer: number | null = null;
@@ -97,8 +97,7 @@ export default class DocStylePlugin extends Plugin implements EditorHost {
 		if (this.cssFrame !== null) window.cancelAnimationFrame(this.cssFrame);
 		closeActivePopover();
 		removeIndentSpans();
-		this.styleEl?.remove();
-		this.styleEl = null;
+		disposeSheet();
 	}
 
 	/* ----------------------------- 变更处理 ----------------------------- */
@@ -163,12 +162,9 @@ export default class DocStylePlugin extends Plugin implements EditorHost {
 			console.error("[版心] 生成样式失败", e);
 			return;
 		}
-		if (!force && css === this.currentCss && this.styleEl?.isConnected) return;
+		if (!force && css === this.currentCss) return;
 		this.currentCss = css;
-		if (!this.styleEl || !this.styleEl.isConnected) {
-			this.styleEl = document.head.createEl("style", { attr: { id: STYLE_EL_ID } });
-		}
-		this.styleEl.textContent = css;
+		setSheetCss(css);
 	}
 
 	/* ----------------------------- 样式集 ----------------------------- */

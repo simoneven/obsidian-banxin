@@ -31,7 +31,7 @@ export function applyIndent(root: HTMLElement, enabled: boolean) {
 		if (!enabled) continue;
 		for (const br of Array.from(p.querySelectorAll("br"))) {
 			if (!hasTextSibling(br, "before") || !hasTextSibling(br, "after")) continue;
-			const span = document.createElement("span");
+			const span = createEl("span");
 			span.className = INDENT_CLASS;
 			br.after(span);
 		}

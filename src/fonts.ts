@@ -102,7 +102,7 @@ let canvas: HTMLCanvasElement | null = null;
 const installedCache = new Map<string, boolean>();
 
 function measure(font: string): number {
-	if (!canvas) canvas = document.createElement("canvas");
+	if (!canvas) canvas = createEl("canvas");
 	const ctx = canvas.getContext("2d");
 	if (!ctx) return 0;
 	ctx.font = font;

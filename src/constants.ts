@@ -12,7 +12,6 @@ export const AUTHOR = {
 	wechat: "数字化流程再造",
 	xiaohongshu: "数字化流程再造",
 };
-export const STYLE_EL_ID = "doc-style-generated";
 export const FONT_PREFIX = "DocStyleFont";
 export const INDENT_CLASS = "doc-style-indent";
 export const NUM_CLASS = "doc-style-num";

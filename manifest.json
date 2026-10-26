@@ -1,7 +1,7 @@
 {
 	"id": "banxin",
 	"name": "Banxin Typography",
-	"version": "0.5.2",
+	"version": "0.5.3",
 	"minAppVersion": "1.4.0",
 	"description": "像 Word 一样用图形界面排版中文笔记：中文字号、中英文分字体、行距、首行缩进、标题自动编号，内置国标公文、学术论文模板。Word-like Chinese typography, no CSS required.",
 	"author": "Simon 老陈",
