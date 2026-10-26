@@ -1,0 +1,505 @@
+/* 中英文分字体（自动生成） */
+@font-face { font-family: "DocStyleFont_wvibug"; font-weight: 400; src: local("Times New Roman"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_wvibug"; font-weight: 700; src: local("Times New Roman Bold"), local("TimesNewRoman-Bold"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_wvibug"; font-weight: 400; src: local("方正小标宋简体"), local("FZXiaoBiaoSong-B05S"), local("方正小标宋_GBK"), local("FZXiaoBiaoSong-B05"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_wvibug"; font-weight: 700; src: local("FZXiaoBiaoSong-B05S Bold"), local("FZXiaoBiaoSong-B05S-Bold"), local("FZXiaoBiaoSong-B05 Bold"), local("FZXiaoBiaoSong-B05-Bold"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_srvh0w"; font-weight: 400; src: local("Times New Roman"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_srvh0w"; font-weight: 700; src: local("Times New Roman Bold"), local("TimesNewRoman-Bold"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_srvh0w"; font-weight: 400; src: local("黑体"), local("SimHei"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_srvh0w"; font-weight: 700; src: local("SimHei Bold"), local("SimHei-Bold"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_eprk64"; font-weight: 400; src: local("Times New Roman"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_eprk64"; font-weight: 700; src: local("Times New Roman Bold"), local("TimesNewRoman-Bold"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_eprk64"; font-weight: 400; src: local("楷体_GB2312"), local("KaiTi_GB2312"), local("楷体"), local("KaiTi"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_eprk64"; font-weight: 700; src: local("KaiTi_GB2312 Bold"), local("KaiTi_GB2312-Bold"), local("KaiTi Bold"), local("KaiTi-Bold"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_4qa4a4"; font-weight: 400; src: local("Times New Roman"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_4qa4a4"; font-weight: 700; src: local("Times New Roman Bold"), local("TimesNewRoman-Bold"); unicode-range: U+0000-024F, U+1E00-1EFF, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2000-2013, U+2016-2017, U+201A-201B, U+201E-2025, U+2027-206F; }
+@font-face { font-family: "DocStyleFont_4qa4a4"; font-weight: 400; src: local("仿宋_GB2312"), local("FangSong_GB2312"), local("仿宋"), local("FangSong"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+@font-face { font-family: "DocStyleFont_4qa4a4"; font-weight: 700; src: local("FangSong_GB2312 Bold"), local("FangSong_GB2312-Bold"), local("FangSong Bold"), local("FangSong-Bold"); unicode-range: U+2E80-2EFF, U+3000-303F, U+3040-30FF, U+3100-312F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF, U+20000-2A6DF, U+2014-2015, U+2018-2019, U+201C-201D, U+2026; }
+
+.markdown-rendered h1,
+.doc-style-preview.doc-style-force-light .markdown-rendered h1 {
+  font-family: "DocStyleFont_wvibug", "Times New Roman", "方正小标宋简体", "FZXiaoBiaoSong-B05S", "方正小标宋_GBK", "FZXiaoBiaoSong-B05", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.8333) !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  line-height: calc(var(--font-text-size) * 3) !important;
+  margin-top: 0 !important;
+  margin-bottom: calc(var(--font-text-size) * 3) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  font-family: "DocStyleFont_wvibug", "Times New Roman", "方正小标宋简体", "FZXiaoBiaoSong-B05S", "方正小标宋_GBK", "FZXiaoBiaoSong-B05", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.8333) !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  line-height: calc(var(--font-text-size) * 3) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  padding-top: 0 !important;
+  padding-bottom: calc(var(--font-text-size) * 3) !important;
+}
+
+.markdown-rendered h2,
+.doc-style-preview.doc-style-force-light .markdown-rendered h2 {
+  font-family: "DocStyleFont_srvh0w", "Times New Roman", "黑体", "SimHei", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  font-family: "DocStyleFont_srvh0w", "Times New Roman", "黑体", "SimHei", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+  text-indent: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered h3,
+.doc-style-preview.doc-style-force-light .markdown-rendered h3 {
+  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 {
+  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+  text-indent: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered h4,
+.doc-style-preview.doc-style-force-light .markdown-rendered h4 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+  text-indent: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered h5,
+.doc-style-preview.doc-style-force-light .markdown-rendered h5 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+  text-indent: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered h6,
+.doc-style-preview.doc-style-force-light .markdown-rendered h6 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 .cm-header,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 .cm-header {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+  line-height: inherit !important;
+  text-indent: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered p:not(li p):not(blockquote p):not(.callout p):not(td p):not(th p),
+.doc-style-preview.doc-style-force-light .markdown-rendered p:not(li p):not(blockquote p):not(.callout p):not(td p):not(th p) {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: justify !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not([class*="HyperMD-"]),
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line:not([class*="HyperMD-"]) {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  font-weight: 400 !important;
+  text-align: justify !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+  text-indent: 2em !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not([class*="HyperMD-"]):not(:has(> br:only-child)),
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line:not([class*="HyperMD-"]):not(:has(> br:only-child)) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-rendered li,
+.doc-style-preview.doc-style-force-light .markdown-rendered li {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+}
+
+.markdown-rendered li li,
+.markdown-rendered li p,
+.doc-style-preview.doc-style-force-light .markdown-rendered li li,
+.doc-style-preview.doc-style-force-light .markdown-rendered li p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-list-line,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-list-line {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+}
+
+.markdown-rendered blockquote,
+.doc-style-preview.doc-style-force-light .markdown-rendered blockquote {
+  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+}
+
+.markdown-rendered blockquote p,
+.doc-style-preview.doc-style-force-light .markdown-rendered blockquote p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.3333) !important;
+  line-height: calc(var(--font-text-size) * 2.3333) !important;
+}
+
+.markdown-rendered table,
+.doc-style-preview.doc-style-force-light .markdown-rendered table {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.1667) !important;
+  line-height: 1.5 !important;
+}
+
+.markdown-rendered table th,
+.markdown-rendered table td,
+.doc-style-preview.doc-style-force-light .markdown-rendered table th,
+.doc-style-preview.doc-style-force-light .markdown-rendered table td {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget table,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-table-widget table {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+  font-size: calc(var(--font-text-size) * 1.1667) !important;
+  line-height: 1.5 !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget table th,
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-table-widget table th,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-table-widget table td {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.markdown-rendered .callout,
+.doc-style-preview.doc-style-force-light .markdown-rendered .callout {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+}
+
+.markdown-rendered .callout p,
+.markdown-rendered .callout li,
+.doc-style-preview.doc-style-force-light .markdown-rendered .callout p,
+.doc-style-preview.doc-style-force-light .markdown-rendered .callout li {
+  font-family: inherit !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-callout .callout,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-callout .callout {
+  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-callout .callout p,
+.markdown-source-view.mod-cm6 .cm-callout .callout li,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-callout .callout p,
+.doc-style-preview.doc-style-force-light .markdown-source-view.mod-cm6 .cm-callout .callout li {
+  font-family: inherit !important;
+}
+
+.markdown-rendered .doc-style-indent,
+.doc-style-preview.doc-style-force-light .markdown-rendered .doc-style-indent {
+  width: 2em !important;
+}
+
+body,
+.doc-style-preview.doc-style-force-light {
+  --file-line-width: calc(var(--font-text-size) * 37.333) !important;
+}
+
+@media print {
+	h1 {
+	  font-family: "DocStyleFont_wvibug", "Times New Roman", "方正小标宋简体", "FZXiaoBiaoSong-B05S", "方正小标宋_GBK", "FZXiaoBiaoSong-B05", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.8333) !important;
+	  font-weight: 400 !important;
+	  text-align: center !important;
+	  line-height: calc(var(--font-text-size) * 3) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: calc(var(--font-text-size) * 3) !important;
+	}
+
+	h2 {
+	  font-family: "DocStyleFont_srvh0w", "Times New Roman", "黑体", "SimHei", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 400 !important;
+	  text-align: left !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	h3 {
+	  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 400 !important;
+	  text-align: left !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	h4 {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 700 !important;
+	  text-align: left !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	h5 {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 400 !important;
+	  text-align: left !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	h6 {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 400 !important;
+	  text-align: left !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	p:not(li p):not(blockquote p):not(.callout p) {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  font-weight: 400 !important;
+	  text-align: justify !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  text-indent: 2em !important;
+	}
+
+	li {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	}
+
+	li li,
+	li p {
+	  font-family: inherit !important;
+	  font-size: inherit !important;
+	  line-height: inherit !important;
+	}
+
+	blockquote {
+	  font-family: "DocStyleFont_eprk64", "Times New Roman", "楷体_GB2312", "KaiTi_GB2312", "楷体", "KaiTi", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.3333) !important;
+	  line-height: calc(var(--font-text-size) * 2.3333) !important;
+	}
+
+	blockquote p {
+	  font-family: inherit !important;
+	  font-size: inherit !important;
+	  line-height: inherit !important;
+	}
+
+	table {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	  font-size: calc(var(--font-text-size) * 1.1667) !important;
+	  line-height: 1.5 !important;
+	}
+
+	table th,
+	table td {
+	  font-family: inherit !important;
+	  font-size: inherit !important;
+	  line-height: inherit !important;
+	}
+
+	.callout {
+	  font-family: "DocStyleFont_4qa4a4", "Times New Roman", "仿宋_GB2312", "FangSong_GB2312", "仿宋", "FangSong", var(--font-text) !important;
+	}
+
+	.callout p,
+	.callout li {
+	  font-family: inherit !important;
+	}
+}

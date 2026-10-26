@@ -1,0 +1,64 @@
+/* 模拟 Obsidian 的基础变量与排版（仅供测试页面） */
+body {
+	margin: 0;
+	--font-text-size: 16px;
+	--font-text: "Noto Sans CJK SC", "Noto Sans", sans-serif;
+	--font-interface: "Noto Sans CJK SC", "Noto Sans", sans-serif;
+	--font-monospace: "DejaVu Sans Mono", monospace;
+	--font-ui-smaller: 12px;
+	--font-ui-small: 13px;
+	--font-ui-medium: 15px;
+	--font-semibold: 600;
+	--radius-s: 6px;
+	--radius-m: 8px;
+	--h1-size: 1.802em; --h2-size: 1.602em; --h3-size: 1.424em; --h4-size: 1.266em; --h5-size: 1.125em; --h6-size: 1em;
+	--line-height-normal: 1.5;
+	--file-line-width: 700px;
+	font-family: var(--font-interface);
+}
+.theme-light {
+	--background-primary: #ffffff; --background-secondary: #f6f6f6; --background-modifier-border: #e0e0e0; --background-modifier-border-hover: #cfcfcf;
+	--background-modifier-hover: rgba(0,0,0,0.06); --text-normal: #222222; --text-muted: #5c5c5c; --text-faint: #999999; --text-accent: #6a5bd6;
+	--interactive-accent: #7b6cd9; --interactive-accent-hsl: 250, 60%, 63%; --text-warning: #c87b00; --text-error: #d33; --bold-color: inherit; --link-color: #6a5bd6;
+	--shadow-s: 0 4px 18px rgba(0,0,0,0.14);
+	--color-orange-rgb: 230, 140, 40; --color-green-rgb: 60,160,80;
+}
+.theme-dark {
+	--background-primary: #1e1e1e; --background-secondary: #262626; --background-modifier-border: #363636; --background-modifier-border-hover: #474747;
+	--background-modifier-hover: rgba(255,255,255,0.07); --text-normal: #dadada; --text-muted: #a3a3a3; --text-faint: #6e6e6e; --text-accent: #9d8ff0;
+	--interactive-accent: #7b6cd9; --interactive-accent-hsl: 250, 60%, 63%; --text-warning: #e0a030; --text-error: #f66; --bold-color: inherit; --link-color: #9d8ff0;
+	--shadow-s: 0 4px 18px rgba(0,0,0,0.5);
+	--color-orange-rgb: 230, 140, 40; --color-green-rgb: 60,160,80;
+}
+body { background: var(--background-primary); color: var(--text-normal); }
+.markdown-rendered, .markdown-source-view { font-family: var(--font-text); font-size: var(--font-text-size); line-height: var(--line-height-normal); color: var(--text-normal); }
+.markdown-rendered h1, .cm-line.HyperMD-header-1, .inline-title { font-size: var(--h1-size); font-weight: 700; line-height: 1.2; margin: 0.6em 0; }
+.markdown-rendered h2, .cm-line.HyperMD-header-2 { font-size: var(--h2-size); font-weight: 700; line-height: 1.2; margin: 0.6em 0; }
+.markdown-rendered h3, .cm-line.HyperMD-header-3 { font-size: var(--h3-size); font-weight: 700; line-height: 1.3; margin: 0.6em 0; }
+.markdown-rendered h4 { font-size: var(--h4-size); font-weight: 700; } .markdown-rendered h5 { font-size: var(--h5-size); font-weight: 700; } .markdown-rendered h6 { font-size: var(--h6-size); font-weight: 700; }
+/* 模拟"内层 span 也设字号"的主题写法：v0.1 叠乘问题的来源 */
+.cm-header-1 { font-size: 1.1em; } .cm-header-2 { font-size: 1.1em; }
+.markdown-rendered p { margin: 1em 0; }
+.markdown-rendered blockquote { border-left: 3px solid var(--interactive-accent); margin: 1em 0; padding: 0 1em; color: var(--text-muted); }
+.markdown-rendered table { border-collapse: collapse; } .markdown-rendered th, .markdown-rendered td { border: 1px solid var(--background-modifier-border); padding: 4px 8px; }
+.markdown-rendered strong { color: var(--bold-color); } .markdown-rendered a { color: var(--link-color); }
+.markdown-rendered pre { background: var(--background-secondary); padding: 8px; font-family: var(--font-monospace); font-size: 0.875em; }
+.markdown-rendered code { font-family: var(--font-monospace); }
+.callout { border-radius: 6px; padding: 8px 12px; background: rgba(120,108,217,0.1); margin: 1em 0; } .callout-title { font-weight: 600; color: var(--text-accent); }
+button { font: inherit; font-size: 13px; padding: 4px 12px; border-radius: 6px; border: 1px solid var(--background-modifier-border); background: var(--background-secondary); color: var(--text-normal); cursor: pointer; }
+button.mod-cta { background: var(--interactive-accent); color: #fff; border-color: transparent; } button.mod-warning { background: #d33; color: #fff; }
+.clickable-icon { border: none; background: transparent; padding: 4px; display: inline-flex; color: var(--text-muted); }
+input[type=text], input[type=number], input[type=search], select { font: inherit; font-size: 13px; padding: 3px 6px; border: 1px solid var(--background-modifier-border); border-radius: 6px; background: var(--background-primary); color: var(--text-normal); }
+.modal-container { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 50; }
+.modal-bg { position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+.modal { position: relative; background: var(--background-primary); border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); padding: 20px; max-width: 90vw; border: 1px solid var(--background-modifier-border); }
+.modal-close-button { position: absolute; right: 12px; top: 10px; width: 24px; height: 24px; cursor: pointer; z-index: 2; }
+.modal-close-button::before { content: "✕"; color: var(--text-muted); }
+.modal-title { font-size: 17px; font-weight: 600; margin-bottom: 12px; }
+.menu { position: fixed; background: var(--background-primary); border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 4px; box-shadow: var(--shadow-s); z-index: 70; font-size: 13px; min-width: 200px; }
+.menu-item { padding: 5px 10px; border-radius: 4px; cursor: pointer; } .menu-item:hover { background: var(--background-modifier-hover); } .menu-separator { height: 1px; background: var(--background-modifier-border); margin: 4px 0; }
+.notice-container { position: fixed; top: 12px; right: 12px; z-index: 90; display: flex; flex-direction: column; gap: 6px; }
+.notice { background: var(--background-secondary); border: 1px solid var(--background-modifier-border); padding: 8px 12px; border-radius: 6px; font-size: 13px; box-shadow: var(--shadow-s); }
+.setting-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-top: 1px solid var(--background-modifier-border); } .setting-item-name { font-weight: 500; } .setting-item-description { color: var(--text-muted); font-size: 12px; }
+.setting-item-heading .setting-item-name { font-weight: 700; font-size: 15px; }
+.dropdown { padding-right: 20px; }

@@ -1,0 +1,10 @@
+{
+	"id": "banxin",
+	"name": "版心 · 中文排版",
+	"version": "0.5.0",
+	"minAppVersion": "1.4.0",
+	"description": "像 Word 一样用图形界面排版中文笔记：中文字号、中英文分字体、行距、首行缩进、标题自动编号，内置国标公文、学术论文模板。Chinese typography for Obsidian.",
+	"author": "Simon 老陈",
+	"authorUrl": "https://github.com/simoneven",
+	"isDesktopOnly": true
+}

@@ -1,0 +1,23 @@
+{
+  "name": "obsidian-banxin",
+  "version": "0.5.0",
+  "description": "版心 · 中文排版（Banxin – Chinese Typography）：像 Word 一样用图形界面设置 Obsidian 的中文排版",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "author": "Simon 老陈",
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.34.1",
+    "@types/node": "^22.9.0",
+    "esbuild": "^0.24.0",
+    "obsidian": "^1.8.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
