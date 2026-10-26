@@ -10,6 +10,50 @@
 
 ![套用模板前后对比](docs/before-after.png)
 
+---
+
+## English
+
+Word-like typography for Obsidian, built for Chinese writing. Set heading, body, blockquote, table and code styles in a GUI: Chinese font sizes (初号 through 六号 or point values), separate CJK and Latin fonts, multiple or fixed line spacing, space before/after, first-line indent, and automatic heading numbering. Ships with templates for Chinese official documents (GB/T 9704-2012), academic theses and comfortable reading. **No CSS required.**
+
+### What it does
+
+| Feature | Detail |
+| --- | --- |
+| A style sheet, like Word | Headings 1–6, body paragraphs, lists, blockquotes, tables, callouts, code, bold and links each get their own CJK/Latin fonts, size, color, line spacing, spacing before/after and first-line indent |
+| Three-layer inheritance | theme → global → element; anything you don't touch keeps following your theme |
+| CJK/Latin font pairing | Two dropdowns; the plugin generates the `@font-face` + `unicode-range` rules and declares real 400/700 faces, so bold uses a true bold face |
+| Chinese font sizes | 初号 through 六号, or a point value (12 pt = 小四) |
+| Line spacing | Multiples, or a fixed point value (Word's "exactly 28 pt") |
+| Automatic heading numbering | Chinese official style (一、（一）1.（1）) or thesis style (1 / 1.1 / 1.1.1). Generated at display time only — **your Markdown stays untouched** — and it carries into PDF export |
+| Templates | Chinese official document, academic thesis, comfortable reading. Missing fonts are reported with suggested substitutes |
+| Style sets | Save multiple sets, switch with one click, import/export as JSON |
+| Per-note style set | Give a single note a different set by writing a class into its frontmatter `cssclasses` |
+| Undo / redo | 50 steps |
+
+### Install
+
+**From the community directory:** Settings → Community plugins → Browse → search "Banxin".
+
+**Manually:** download `banxin-0.5.1.zip` from the [release page](../../releases), unzip, and drop the `banxin` folder into `<vault>/.obsidian/plugins/`. Then enable it under Settings → Community plugins.
+
+Requires Obsidian 1.4.0 or later, desktop only.
+
+### Known limitations
+
+- In the editor view, space before/after applies to body paragraphs and headings only; blockquote and list spacing appears in reading view and PDF export.
+- Editor-view spacing is implemented with padding, so adjacent paragraphs can merge slightly differently than reading view's margins.
+- Properties left unset in a per-note style set fall back to the vault-wide set, not to the theme defaults.
+- Letter spacing is a single element-level value; it cannot differ between CJK and Latin text.
+- Tables get font, size, color, alignment and line spacing — no borders or backgrounds.
+- Desktop only. Chinese official-document fonts (方正小标宋, 仿宋_GB2312) must be installed separately; some are commercial.
+
+### License
+
+MIT © 2026 老陈 (Simon).
+
+---
+
 ## 适合谁
 
 - 用 Obsidian 起草通知、报告、方案的人：套用「国标公文」模板，写完即接近正式文件格式，导出 PDF 不用再回 Word 重排。

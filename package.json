@@ -1,6 +1,6 @@
 {
   "name": "obsidian-banxin",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "版心 · 中文排版（Banxin – Chinese Typography）：像 Word 一样用图形界面设置 Obsidian 的中文排版",
   "main": "main.js",
   "private": true,
